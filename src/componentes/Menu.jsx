@@ -1,18 +1,18 @@
 
-function Menu(){
+function Menu({enviaMensagem}){
     return (
         <div id="div_menu">
-            <button>HOME</button>
-            <button>Consultar Material</button>
-            <button>Cadastrar Material</button>
-            <button>Editar Material</button>
-            <button>Excluir Material</button>
-            <button>Retirar Material</button>
-            <button>Devolver Material</button>
-            <button>Cadastrar Usuário</button>
-            <button>Consultar Cadastro de Usuário</button>
-            <button>Editar Cadastro de Usuário</button>
-            <button>Excluir Usuário</button>
+            <button onClick={()=>enviaMensagem("Pagina Inicial")}>HOME</button>
+            <button onClick={()=>enviaMensagem("consultar itens")}>Consultar Material</button>
+            <button onClick={()=>enviaMensagem("cadastrar itens")}>Cadastrar Material</button>
+            <button onClick={()=>enviaMensagem("editar itens")}>Editar Material</button>
+            <button onClick={()=>enviaMensagem("excluir itens")}>Excluir Material</button>
+            <button onClick={()=>enviaMensagem("retirar itens")}>Retirar Material</button>
+            <button onClick={()=>enviaMensagem("devolver itens")}>Devolver Material</button>
+            <button onClick={()=>enviaMensagem("cadastrar usuario")}>Cadastrar Usuário</button>
+            <button onClick={()=>enviaMensagem("consultar usuario")}>Consultar Cadastro de Usuário</button>
+            <button onClick={()=>enviaMensagem("editar usuario")}>Editar Cadastro de Usuário</button>
+            <button onClick={()=>enviaMensagem("excluir usuario")}>Excluir Usuário</button>
         </div>
     );
 }

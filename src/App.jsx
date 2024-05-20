@@ -6,11 +6,15 @@ import Menu from './componentes/Menu'
 import FormItens from './componentes/FormItens'
 
 function App() {
+
+  const recebeMensagem = (mensagem)=>{
+    console.log(mensagem);
+  }
  
   return (
     <>
       <Header />
-      <Menu />
+      <Menu enviaMensagem={recebeMensagem}/>
       <FormItens />
       <Footer />
     </>
