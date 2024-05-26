@@ -1,10 +1,10 @@
 import '../styles/FormItens.css'
 
-function FormItens(){
+function FormItens({titulo, txt_btn}){
     return (
         <div id='div_form_itens'>
             <div id='div_form_itens2'>
-                <div id='div_form_itens_titulo' className='div_linha'><h2>Consultar Material</h2></div>
+                <div id='div_form_itens_titulo' className='div_linha'><h2>{titulo}</h2></div>
                 <div className='div_linha'>
                     <label className='label_form_itens' htmlFor="codigo">Código:</label>
                     <input className='input_form_itens' type="text" name='codigo' placeholder='Informe o código do objeto' />
@@ -40,7 +40,7 @@ function FormItens(){
                     <textarea className='input_form_itens' name="descricao" id="" placeholder='Faça uma breve descrição do objeto'></textarea>
                 </div>
                 <div id='div_but_itens' className='div_linha'>
-                    <input id='but_form_itens' type="button" name='tipo' value={'Enviar'} />
+                    <input id='but_form_itens' type="button" name='tipo' value={txt_btn} />
                 </div>
             </div>
         </div>
