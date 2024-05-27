@@ -1,9 +1,16 @@
 import React from "react";
+import Menu from "../componentes/Menu";
+import FormUsuario from "../componentes/FormUsuarios";
 
 function ExcluirUsuario(){
     return(
-        <div>
-            <h1>Cadastrar Usuário</h1>
+        <div className="div_principal">
+            <section className="section_menu">
+                <Menu/>
+            </section>
+            <section className="section_conteudo">
+                <FormUsuario titulo={'Excluir Usuário'} txt_btn={'Buscar'}/>
+            </section>  
         </div>
     );
 }

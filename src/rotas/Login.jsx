@@ -1,17 +1,18 @@
 import React from "react";
 import Menu from "../componentes/Menu";
-import FormItens from "../componentes/FormItens";
+import FormUsuario from "../componentes/FormUsuarios";
 
-function EditarItem(){
+function Login(){
     return(
         <div className="div_principal">
             <section className="section_menu">
                 <Menu/>
             </section>
             <section className="section_conteudo">
-                <FormItens titulo={'Editar Material'} txt_btn={'Buscar'}/>
+                <FormUsuario titulo={'Faça Login Aqui'} txt_btn={'Entrar'}/>
             </section>  
         </div>
     );
 }
-export default EditarItem;
+
+export default Login;

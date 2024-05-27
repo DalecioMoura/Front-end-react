@@ -1,11 +1,16 @@
 import React from "react";
+import Menu from "../componentes/Menu";
 import FormUsuario from "../componentes/FormUsuarios";
-import FormItens from "../componentes/FormItens";
 
 function CadastrarUsuario(){
     return(
-        <div>
-            <FormUsuario titulo={'Cadastar Usúario'} txt_btn={'Cadastrar'}/>
+        <div className="div_principal">
+            <section className="section_menu">
+                <Menu/>
+            </section>
+            <section className="section_conteudo">
+                <FormUsuario titulo={'Cadastrar Usuário'} txt_btn={'Cadastrar'}/>
+            </section>  
         </div>
     );
 }

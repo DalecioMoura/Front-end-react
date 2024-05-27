@@ -1,10 +1,16 @@
 import React from "react";
+import Menu from "../componentes/Menu";
 import FormItens from "../componentes/FormItens";
 
 function ExcluirItem(){
     return(
-        <div>
-            <FormItens titulo={"Excluir Item"} txt_btn={"Buscar"}/>
+        <div className="div_principal">
+            <section className="section_menu">
+                <Menu/>
+            </section>
+            <section className="section_conteudo">
+                <FormItens titulo={'Excluir Material'} txt_btn={'Buscar'}/>
+            </section>  
         </div>
     );
 }

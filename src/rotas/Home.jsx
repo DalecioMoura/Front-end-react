@@ -1,11 +1,11 @@
 import React from "react";
 import PaginaInicial from "../componentes/PaginaInicial";
+import FormUsuario from "../componentes/FormUsuarios";
 import FormItens from "../componentes/FormItens";
-import Menu from "../componentes/Menu";
 
 function Home(){
     return(
-        <div>   
+        <div>
             <PaginaInicial />
         </div>
     );

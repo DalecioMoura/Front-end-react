@@ -14,8 +14,7 @@ import CadastrarUsuario from './rotas/CadastrarUsuario'
 import ConsultarUsuario from './rotas/ConsultarUsuario'
 import EditarUsuario from './rotas/EditarUsuario'
 import ExcluirUsuario from './rotas/ExcluirUsuario'
-import Menu from './componentes/Menu'
-//import FormItens from './componentes/FormItens'
+import Login from './rotas/Login'
 
 function App() {
 //<Menu enviaMensagem={recebeMensagem}/>
@@ -26,23 +25,29 @@ function App() {
  
   return (
     <BrowserRouter>
-      <Header />
-      <Menu />
-      <Routes>
-        <Route exact path='/'element={<Home/>}/>
-        <Route path='/cadastrarmaterial'    element={<CadastrarItem/>}/>
-        <Route path='/consultarmaterial'    element={<ConsultarItem/>}/>
-        <Route path='/cadastarmaterial'     element={<CadastrarItem/>}/>
-        <Route path='/editarmaterial'       element={<EditarItem/>}/>
-        <Route path='/excluirmaterial'      element={<ExcluirItem/>}/>
-        <Route path='/retirarmaterial'      element={<RetirarItem/>}/>
-        <Route path='/devolvermaterial'     element={<DevolverItem/>}/>
-        <Route path='/cadastrarusuario'     element={<CadastrarUsuario/>}/>
-        <Route path='/consultarusuario'     element={<ConsultarUsuario/>}/>
-        <Route path='/editarusuario'        element={<EditarUsuario/>}/>
-        <Route path='/excluirusuario'       element={<ExcluirUsuario/>}/>
-      </Routes>
-      <Footer />
+      <section id='section_header'>
+        <Header />
+      </section>
+      <section id='section_conteudo'>
+        <Routes>
+          <Route path='/'                     element={<Home/>}/>
+          <Route path='/cadastrarmaterial'    element={<CadastrarItem/>}/>
+          <Route path='/consultarmaterial'    element={<ConsultarItem/>}/>
+          <Route path='/cadastarmaterial'     element={<CadastrarItem/>}/>
+          <Route path='/editarmaterial'       element={<EditarItem/>}/>
+          <Route path='/excluirmaterial'      element={<ExcluirItem/>}/>
+          <Route path='/retirarmaterial'      element={<RetirarItem/>}/>
+          <Route path='/devolvermaterial'     element={<DevolverItem/>}/>
+          <Route path='/cadastrarusuario'     element={<CadastrarUsuario/>}/>
+          <Route path='/consultarusuario'     element={<ConsultarUsuario/>}/>
+          <Route path='/editarusuario'        element={<EditarUsuario/>}/>
+          <Route path='/excluirusuario'       element={<ExcluirUsuario/>}/>
+          <Route path='/login'                element={<Login/>}/>
+        </Routes>
+      </section>
+      <section id='section_footer'>
+        <Footer />
+      </section>
     </BrowserRouter>
   );
 }

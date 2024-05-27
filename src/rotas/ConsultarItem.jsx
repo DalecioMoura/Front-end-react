@@ -1,10 +1,16 @@
 import React from "react";
+import Menu from "../componentes/Menu";
 import FormItens from "../componentes/FormItens";
 
 function ConsultarItem(){
     return(
-        <div>
-            <FormItens titulo={'Consultar Item'} txt_btn={'Buscar'}/>
+        <div className="div_principal">
+            <section className="section_menu">
+                <Menu/>
+            </section>
+            <section className="section_conteudo">
+                <FormItens titulo={'Consultar Material'} txt_btn={'Buscar'}/>
+            </section>  
         </div>
     );
 }
