@@ -9,7 +9,7 @@ function Login(){
                 <Menu/>
             </section>
             <section className="section_conteudo">
-                <FormUsuario titulo={'Faça Login Aqui'} txt_btn={'Entrar'}/>
+                <FormUsuario titulo={'Faça Login Aqui'} txt_btn={'Entrar'} rota={'login'}/>
             </section>  
         </div>
     );

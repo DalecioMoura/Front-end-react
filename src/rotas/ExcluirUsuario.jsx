@@ -9,7 +9,7 @@ function ExcluirUsuario(){
                 <Menu/>
             </section>
             <section className="section_conteudo">
-                <FormUsuario titulo={'Excluir Usuário'} txt_btn={'Buscar'}/>
+                <FormUsuario titulo={'Excluir Usuário'} txt_btn={'Buscar'} rota={'excluir'}/>
             </section>  
         </div>
     );

@@ -9,7 +9,7 @@ function ConsultarUsuario(){
                 <Menu/>
             </section>
             <section className="section_conteudo">
-                <FormUsuario titulo={'Consultar Cadastro Usuário'} txt_btn={'Buscar'}/>
+                <FormUsuario titulo={'Consultar Cadastro Usuário'} txt_btn={'Buscar'} rota={'consultar'}/>
             </section>  
         </div>
     );

@@ -9,7 +9,7 @@ function EditarUsuario(){
                 <Menu/>
             </section>
             <section className="section_conteudo">
-                <FormUsuario titulo={'Editar Cadastro de Usuário'} txt_btn={'Buscar'}/>
+                <FormUsuario titulo={'Editar Cadastro de Usuário'} txt_btn={'Buscar'} rota={'editar'}/>
             </section>  
         </div>
     );
