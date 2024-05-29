@@ -1,0 +1,48 @@
+#id_div_principal{
+    text-align: center;
+    margin-top: 20px;
+}
+#id_div_principal button{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-weight: bolder;
+    font-size:medium;
+}
+#id_div_cabecalho{
+    font-weight: bolder;
+}
+#id_div_cabecalho,
+#id_div_lista{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 2px;
+    background-color: antiquewhite;
+}
+#id_div_lista{
+    border-bottom: 1px;
+    background-color:aliceblue;
+}
+.col{
+    
+    border: solid 1px;
+    margin: 0 auto;
+    text-align: center;
+}
+.col_id{
+    width: 4%;
+}
+.col_apelido,
+.col_matricula,
+.col_setor{
+    width: 8%;
+}
+.col_usuario{
+    width: 12%;
+}
+.col_nome,
+.col_email{
+    width: 30%;
+    
+}
