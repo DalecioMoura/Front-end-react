@@ -1,6 +1,6 @@
 import React from "react";
 
-async function OperRetirarItem(codigo, st){
+async function OperDevolverItem(codigo, st){
     console.log('Código Item', codigo);
     console.log('Status Item', st);
     const filtro = {"filtro":"codigo", "valor":codigo}
@@ -25,4 +25,4 @@ async function OperRetirarItem(codigo, st){
     
 }
 
-export default OperRetirarItem;
+export default OperDevolverItem;

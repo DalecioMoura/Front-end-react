@@ -5,6 +5,7 @@ import OperCadastrarItem from './operações/itens/OperCadastrarItem';
 import OperConsultarItens from './operações/itens/OperConsultarItem';
 import OperEditarItem from './operações/itens/OperEditarItem';
 import OperRetirarItem from './operações/itens/OperRetirarItem';
+import OperDevolverItem from './operações/itens/OperDevolverItem';
 
 function FormItens({titulo, txt_btn, rota, enviaDados}){
     const [dados, setDados] = useState({
@@ -31,7 +32,6 @@ function FormItens({titulo, txt_btn, rota, enviaDados}){
 
     const handleChangeDestino = (e)=>{
         setInputDestino(e.target.value);
-        
     }
 
     async function handleClick(){
@@ -77,13 +77,24 @@ function FormItens({titulo, txt_btn, rota, enviaDados}){
             console.log('Retirar Item.');
             atualizaStatus('retirar');
             if(dados.codigo !== ''){
-                itens = OperRetirarItem(dados.codigo, st);
+                itens = await OperRetirarItem(dados.codigo, st);
+                console.log(st);
+            }else{
+                return console.log('Item não encontardo!');
             }
-            console.log(st);
-            return console.log('RETORNO');
+            
         }
+
+
         if(rota === 'devolver'){
-            console.log('Devolver Item.')
+            console.log('Devolver Item.');
+            atualizaStatus('devolver');
+            if(dados.codigo !== ''){
+                itens = await OperDevolverItem(dados.codigo, st);
+                console.log(st);
+            }else{
+                return console.log('Item não encontardo!');
+            }
         }
 
         console.log(dados);
@@ -101,8 +112,7 @@ function FormItens({titulo, txt_btn, rota, enviaDados}){
                     n_serie:item[0].n_serie,
                     modelo:item[0].modelo,
                     fabricante:item[0].fabricante,
-                    descricao:item[0].descricao,
-                    destino:item[0].destino
+                    descricao:item[0].descricao
                 });
     }
 
@@ -142,7 +152,7 @@ function FormItens({titulo, txt_btn, rota, enviaDados}){
         fabricante:'',
         descricao:'',
         status:''});
-        setSt({destino:''});
+        setInputDestino('');
     }
 
     return (
@@ -186,7 +196,7 @@ function FormItens({titulo, txt_btn, rota, enviaDados}){
 
                 <div className='div_linha' style={{display:rota==='retirar'?'':'none'}}>
                     <label className='label_form_itens' htmlFor="id_destino">Destino:</label>
-                    <input id='id_destino' className='input_form_itens' type="text" name='destino' value={st.destino} placeholder='Informe o destino' onChange={handleChangeDestino}/>
+                    <input id='id_destino' className='input_form_itens' type="text" name='destino' value={inputDestino} placeholder='Informe o destino' onChange={handleChangeDestino}/>
                 </div>
 
                 <div id='div_but_itens' className='div_linha'>

@@ -27,7 +27,7 @@ function RetirarItem(){
             <section className="section_conteudo" style={{display:exibirLista?'none':''}}>
                 <FormItens titulo={'Retirar Material'} txt_btn={'Retirar'} rota={'retirar'} enviaDados={recebeDados}/>
             </section>
-            <section style={{display:exibirLista?'none':''}}>
+            <section style={{display:exibirLista?'':'none'}}>
                 <ListaItens titulo={'Lista de Material'} txt_btn={'Retirar Outro Item'} voltarForm={voltaForm} dados={dadosUsuario}/>
             </section>
         </div>
