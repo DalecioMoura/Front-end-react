@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import '../styles/ListaUsuario.css';
 
@@ -18,6 +18,7 @@ function ListaUsuarios({titulo, txt_btn, voltarForm, dados}){
             dadosUsuarios.push(vetAux);
             vetAux = [];
         }
+        console.log(dadosUsuarios);
     }
     const handleClick = ()=>{
         voltarForm(false);
@@ -26,8 +27,8 @@ function ListaUsuarios({titulo, txt_btn, voltarForm, dados}){
     return(
         <div id="id_div_principal">
             <button onClick={handleClick}>{txt_btn}</button>
-            <h1 className={dados == 0?'excluir':''}>{titulo}</h1>
-            <div id="id_div_cabecalho" style={{display:dados==0?'none':''} }>
+            <h1>{titulo}</h1>
+            <div id="id_div_cabecalho">
                 <div className="col col_id">ID:</div>
                 <div className="col col_matricula">matrícula:</div>
                 <div className="col col_nome">Nome:</div>
@@ -45,7 +46,7 @@ function ListaUsuarios({titulo, txt_btn, voltarForm, dados}){
                     <div className="col col_setor">{valor[4]}</div>
                     <div className="col col_email">{valor[5]}</div>
                     <div className="col col_usuario">{valor[6]}</div>  
-                </div>))}  
+                </div>))}             
         </div>
     );   
 }

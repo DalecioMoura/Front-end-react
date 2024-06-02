@@ -1,0 +1,158 @@
+#root {
+  margin: 0;
+  padding: 0;
+}
+.div_principal{
+  width: 100%;
+  margin:90px auto;
+}
+
+.section_menu{
+
+}
+.section_conteudo{
+
+}
+
+/*-- Início Formatação do Cabeçalho --*/
+header{
+  display: flex;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  background-color: aquamarine;
+  font-weight: bolder;
+  border-bottom: solid 4px;
+  padding: 2px;
+}
+
+#div_h1{
+  margin: auto;
+}
+
+h1{
+  margin: 0;
+}
+
+#div_login{
+  display: block;
+  text-align: center;
+  margin-right: 5px;
+  padding: 5px;
+  border: solid 1px;
+  height: 70px;
+  align-content: end;
+  background-color: white;
+}
+#div_login img{
+ 
+}
+
+#div_login2{
+  margin-top: 5px;
+  border: solid 1px;
+  border-radius: 3px;
+  text-align: center;
+}
+/*-- Fim Formatação do cabeçalho --*/
+
+
+
+/*-- Início Formatação do Menú --*/
+#div_menu{
+  display: inline-block;
+  align-content: center;
+  text-align: center;
+  top: 91px;
+  width: 100%;
+  min-height: 70px;
+  background-color: aqua;
+  border-bottom: solid 2px;
+}
+
+#div_menu button{
+  margin: 2px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+/*-- Fim Formatação do Menú --*/
+
+/*-- Início Formatação do Fomulario Itens --*/
+#div_form_itens{
+  display: flex;
+  width: 500px;
+  border: solid 2px;
+  border-radius: 5px;
+  margin:20px auto;
+  padding: 2px 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+#div_form_itens2{
+  display: inline-block;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+#div_form_itens_titulo{
+  width: 100%;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#div_form_itens input{
+  display: block;
+}
+
+.div_linha{
+  display: flex;
+  margin: 4px;
+}
+
+.label_form_itens{
+  min-width: 19%;
+  font-weight: bold;
+}
+
+.input_form_itens{
+  min-width: 79%;
+  text-align: center;
+}
+
+#div_but_itens{
+  justify-content: end;
+  padding: 2px;
+}
+
+/*-- Fim Formatação do Formulário Itens --*/
+
+/*-- Início Formatação do Pagina Inicial --*/
+
+.div_principal h1{
+  text-align: center;
+}
+/*-- Fim Formatação do Pagina Inicial --*/
+
+/*-- Início Formatação do Rodapé --*/
+footer{
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  background-color: aquamarine;
+  border-top: solid 2px #222;
+  color: #222;
+  font-weight: bolder;
+  bottom: 0;
+}
+/*-- Fim Formatação do Rodapé --*/

@@ -1,36 +1,33 @@
 import React,{useState} from "react";
 import Menu from "../componentes/Menu";
-import FormItens from "../componentes/FormItens";
-import ListaItens from "../componentes/ListaItens";
+import FormUsuario from "../componentes/FormUsuarios";
+import ListaUsuarios from "../componentes/ListaUsuarios";
 
-function EditarItem(){
+function CadastrarUsuario(){
 
     const [exibirLista, setExibirLista] = useState(false);
     const [dadosUsuario, setDadosUsuario] = useState();
 
     const recebeDados = (dados)=>{
-        console.log(dados);
         setExibirLista(true);
         setDadosUsuario(dados);
-        console.log(dadosUsuario);
     };
 
     const voltaForm = ()=>{
         setExibirLista(false);
-    };
-
+    }
     return(
         <div className="div_principal">
             <section className="section_menu">
                 <Menu/>
             </section>
             <section className="section_conteudo" style={{display:exibirLista?'none':''}}>
-                <FormItens titulo={'Editar Material'} txt_btn={'Buscar'} rota={'editar'} enviaDados={recebeDados}/>
+                <FormUsuario titulo={'Cadastrar Usuário'} txt_btn={'Cadastrar'} rota={'cadastrar'} enviaDados={recebeDados}/>
             </section>
             <section style={{display:exibirLista?'':'none'}}>
-                <ListaItens titulo={'Lista de Material'} txt_btn={'Editar Outro Item'} voltarForm={voltaForm} dados={dadosUsuario}/>
+                <ListaUsuarios titulo={'Lista de Usuários'} txt_btn={'Novo Cadastro'} voltarForm={voltaForm} dados={dadosUsuario}/>
             </section>
         </div>
     );
 }
-export default EditarItem;
+export default CadastrarUsuario;

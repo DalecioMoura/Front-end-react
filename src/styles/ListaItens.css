@@ -30,21 +30,24 @@
     border: solid 1px;
     margin: 0 auto;
     text-align: center;
+    align-content: center;
 }
 .col_id{
-    width: 4%;
+    width: 3%;
 }
-.col_apelido,
-.col_matricula,
-.col_setor{
-    width: 8%;
+.col_codigo,
+.col_local,
+.col_serie,
+.col_modelo,
+.col_fabricante{
+    width: 10%;
 }
-.col_usuario{
-    width: 12%;
+.col_descricao{
+    width: 19%;
 }
-.col_nome,
-.col_email{
-    width: 30%;
+.col_tipo,
+.col_st{
+    width: 14%;
     
 }
 

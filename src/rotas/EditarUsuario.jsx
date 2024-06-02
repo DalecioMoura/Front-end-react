@@ -9,7 +9,6 @@ function EditarUsuario(){
     const [dadosUsuario, setDadosUsuario] = useState();
 
     const recebeDados = (dados)=>{
-        console.log(dados);
         setExibirLista(true);
         setDadosUsuario(dados);
     };
